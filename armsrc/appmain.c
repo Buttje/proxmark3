@@ -73,6 +73,7 @@ struct common_area common_area __attribute__((section(".commonarea")));
 static int button_status = BUTTON_NO_CLICK;
 static bool allow_send_wtx = false;
 static uint16_t tearoff_delay_us = 0;
+static uint8_t tearoff_pulse_us = 0;
 static bool tearoff_enabled = false;
 
 int tearoff_hook(void) {
@@ -83,7 +84,13 @@ int tearoff_hook(void) {
         }
         SpinDelayUsPrecision(tearoff_delay_us);
         FpgaWriteConfWord(FPGA_MAJOR_MODE_OFF);
+        if (tearoff_pulse_us > 0) {
+            Dbprintf(_YELLOW_("SWUSH!"));
+            TRIG_INV();
+            FpgaWriteConfWord(prevModeOff);
+        }
         tearoff_enabled = false;
+        Dbprintf(_YELLOW_("prev Mode 0x%02X"),prevModeOff);
         Dbprintf(_YELLOW_("Tear-off triggered!"));
         return PM3_ETEAROFF;
     } else {
@@ -764,16 +771,19 @@ static void PacketReceived(PacketCommandNG *packet) {
                 uint16_t delay_us;
                 bool on;
                 bool off;
+                uint8_t pulse_us;
             } PACKED;
             struct p *payload = (struct p *)packet->data.asBytes;
             if (payload->on && payload->off)
                 reply_ng(CMD_SET_TEAROFF, PM3_EINVARG, NULL, 0);
             if (payload->on)
                 tearoff_enabled = true;
-            if (payload->off)
+            if (payload->off) 
                 tearoff_enabled = false;
             if (payload->delay_us > 0)
                 tearoff_delay_us = payload->delay_us;
+            if (payload->pulse_us > 0)
+                tearoff_pulse_us = payload->pulse_us;
             reply_ng(CMD_SET_TEAROFF, PM3_SUCCESS, NULL, 0);
             break;
         }

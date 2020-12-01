@@ -379,6 +379,7 @@ typedef struct {
     uint16_t delay_us;
     bool on;
     bool off;
+    uint8_t pulse_us;
 } PACKED tearoff_params_t;
 
 // For the bootloader

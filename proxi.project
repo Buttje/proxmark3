@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="proxi" Version="10.0.0" InternalType="">
+  <VirtualDirectory Name="client">
+    <VirtualDirectory Name="experimental_lib">
+      <VirtualDirectory Name="example_c">
+        <File Name="client/experimental_lib/example_c/test.c"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="src">
+      <VirtualDirectory Name="emv">
+        <VirtualDirectory Name="test">
+          <File Name="client/src/emv/test/crypto_test.c"/>
+          <File Name="client/src/emv/test/cryptotest.h"/>
+          <File Name="client/src/emv/test/dda_test.c"/>
+          <File Name="client/src/emv/test/cda_test.c"/>
+          <File Name="client/src/emv/test/sda_test.h"/>
+          <File Name="client/src/emv/test/sda_test.c"/>
+          <File Name="client/src/emv/test/crypto_test.h"/>
+          <File Name="client/src/emv/test/dda_test.h"/>
+          <File Name="client/src/emv/test/cda_test.h"/>
+          <File Name="client/src/emv/test/cryptotest.c"/>
+        </VirtualDirectory>
+        <File Name="client/src/emv/emv_pk.h"/>
+        <File Name="client/src/emv/emv_pki_priv.c"/>
+        <File Name="client/src/emv/emv_pki.h"/>
+        <File Name="client/src/emv/emvcore.c"/>
+        <File Name="client/src/emv/dol.h"/>
+        <File Name="client/src/emv/cmdemv.h"/>
+        <File Name="client/src/emv/emv_tags.h"/>
+        <File Name="client/src/emv/emv_tags.c"/>
+        <File Name="client/src/emv/crypto_backend.h"/>
+        <File Name="client/src/emv/crypto.h"/>
+        <File Name="client/src/emv/dol.c"/>
+        <File Name="client/src/emv/emvjson.c"/>
+        <File Name="client/src/emv/tlv.h"/>
+        <File Name="client/src/emv/emv_roca.h"/>
+        <File Name="client/src/emv/emv_pki.c"/>
+        <File Name="client/src/emv/cmdemv.c"/>
+        <File Name="client/src/emv/emv_roca.c"/>
+        <File Name="client/src/emv/crypto.c"/>
+        <File Name="client/src/emv/emvcore.h"/>
+        <File Name="client/src/emv/emv_pki_priv.h"/>
+        <File Name="client/src/emv/emvjson.h"/>
+        <File Name="client/src/emv/crypto_polarssl.c"/>
+        <File Name="client/src/emv/emv_pk.c"/>
+        <File Name="client/src/emv/apduinfo.c"/>
+        <File Name="client/src/emv/apduinfo.h"/>
+        <File Name="client/src/emv/tlv.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="fido">
+        <File Name="client/src/fido/fidocore.h"/>
+        <File Name="client/src/fido/cose.h"/>
+        <File Name="client/src/fido/cbortools.h"/>
+        <File Name="client/src/fido/additional_ca.h"/>
+        <File Name="client/src/fido/additional_ca.c"/>
+        <File Name="client/src/fido/cbortools.c"/>
+        <File Name="client/src/fido/cose.c"/>
+        <File Name="client/src/fido/fidocore.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="ui">
+        <File Name="client/src/ui/ui_overlays.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="mifare">
+        <File Name="client/src/mifare/mifare4.h"/>
+        <File Name="client/src/mifare/desfire_crypto.c"/>
+        <File Name="client/src/mifare/mifaredefault.h"/>
+        <File Name="client/src/mifare/mifaredefault.c"/>
+        <File Name="client/src/mifare/ndef.h"/>
+        <File Name="client/src/mifare/mad.h"/>
+        <File Name="client/src/mifare/desfire_crypto.h"/>
+        <File Name="client/src/mifare/mfkey.c"/>
+        <File Name="client/src/mifare/mifarehost.c"/>
+        <File Name="client/src/mifare/mifarehost.h"/>
+        <File Name="client/src/mifare/ndef.c"/>
+        <File Name="client/src/mifare/mfkey.h"/>
+        <File Name="client/src/mifare/mad.c"/>
+        <File Name="client/src/mifare/mifare4.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="loclass">
+        <File Name="client/src/loclass/cipher.h"/>
+        <File Name="client/src/loclass/cipherutils.c"/>
+        <File Name="client/src/loclass/cipher.c"/>
+        <File Name="client/src/loclass/ikeys.h"/>
+        <File Name="client/src/loclass/elite_crack.c"/>
+        <File Name="client/src/loclass/cipherutils.h"/>
+        <File Name="client/src/loclass/hash1_brute.h"/>
+        <File Name="client/src/loclass/hash1_brute.c"/>
+        <File Name="client/src/loclass/ikeys.c"/>
+        <File Name="client/src/loclass/elite_crack.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="crypto">
+        <File Name="client/src/crypto/asn1utils.c"/>
+        <File Name="client/src/crypto/libpcrypto.c"/>
+        <File Name="client/src/crypto/asn1dump.c"/>
+        <File Name="client/src/crypto/libpcrypto.h"/>
+        <File Name="client/src/crypto/asn1dump.h"/>
+        <File Name="client/src/crypto/asn1utils.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="uart">
+        <File Name="client/src/uart/uart_posix.c"/>
+        <File Name="client/src/uart/uart_win32.c"/>
+        <File Name="client/src/uart/uart.h"/>
+      </VirtualDirectory>
+      <File Name="client/src/cmdhffelica.c"/>
+      <File Name="client/src/cmdhfthinfilm.c"/>
+      <File Name="client/src/cmdlfti.c"/>
+      <File Name="client/src/cmdlfguard.h"/>
+      <File Name="client/src/cmdlfvisa2000.c"/>
+      <File Name="client/src/cmdlfmotorola.c"/>
+      <File Name="client/src/fileutils.h"/>
+      <File Name="client/src/cmdlffdxb.h"/>
+      <File Name="client/src/emojis_alt.h"/>
+      <File Name="client/src/cmdhflist.h"/>
+      <File Name="client/src/proxendian.h"/>
+      <File Name="client/src/cmdlfjablotron.h"/>
+      <File Name="client/src/cmddata.c"/>
+      <File Name="client/src/aidsearch.c"/>
+      <File Name="client/src/cmdlfem4x05.h"/>
+      <File Name="client/src/cmdlfpcf7931.h"/>
+      <File Name="client/src/proxgui.cpp"/>
+      <File Name="client/src/cmdlfnexwatch.c"/>
+      <File Name="client/src/jansson_path.h"/>
+      <File Name="client/src/cmdlfsecurakey.c"/>
+      <File Name="client/src/cmdhflist.c"/>
+      <File Name="client/src/cmdflashmem.c"/>
+      <File Name="client/src/aiddesfire.c"/>
+      <File Name="client/src/cmdusart.h"/>
+      <File Name="client/src/cmdhf14b.h"/>
+      <File Name="client/src/proxgui.h"/>
+      <File Name="client/src/cmdlfjablotron.c"/>
+      <File Name="client/src/cmdlfmotorola.h"/>
+      <File Name="client/src/cmdhfmfu.h"/>
+      <File Name="client/src/cmdlfhitag.c"/>
+      <File Name="client/src/cmdlfnoralsy.h"/>
+      <File Name="client/src/cmdlfem4x.c"/>
+      <File Name="client/src/cmdlfhitag.h"/>
+      <File Name="client/src/cmdlfpresco.c"/>
+      <File Name="client/src/cmdhffelica.h"/>
+      <File Name="client/src/pm3.c"/>
+      <File Name="client/src/cmddata.h"/>
+      <File Name="client/src/pm3_bitlib.h"/>
+      <File Name="client/src/cmdlfnexwatch.h"/>
+      <File Name="client/src/cmdusart.c"/>
+      <File Name="client/src/cmdlfawid.c"/>
+      <File Name="client/src/cmdwiegand.c"/>
+      <File Name="client/src/cmdhfmfdes.c"/>
+      <File Name="client/src/version.c"/>
+      <File Name="client/src/tea.h"/>
+      <File Name="client/src/cmdhflegic.h"/>
+      <File Name="client/src/proxmark3.c"/>
+      <File Name="client/src/cmdhflto.h"/>
+      <File Name="client/src/cmdscript.h"/>
+      <File Name="client/src/pm3_pywrap.c"/>
+      <File Name="client/src/wiegand_formatutils.c"/>
+      <File Name="client/src/cmdlfindala.h"/>
+      <File Name="client/src/cmdlfti.h"/>
+      <File Name="client/src/cmdlfkeri.c"/>
+      <File Name="client/src/cmdflashmemspiffs.c"/>
+      <File Name="client/src/cmdhf14a.c"/>
+      <File Name="client/src/cmdlfdestron.h"/>
+      <File Name="client/src/cmdtrace.c"/>
+      <File Name="client/src/elf.h"/>
+      <File Name="client/src/cmdhfmfp.c"/>
+      <File Name="client/src/cmdhfmf.h"/>
+      <File Name="client/src/wiegand_formatutils.h"/>
+      <File Name="client/src/ui.h"/>
+      <File Name="client/src/wiegand_formats.h"/>
+      <File Name="client/src/cmdhfmfhard.c"/>
+      <File Name="client/src/proxguiqt.moc.cpp"/>
+      <File Name="client/src/cmdlfparadox.h"/>
+      <File Name="client/src/cmdhfwaveshare.c"/>
+      <File Name="client/src/pm3_bit_limits.h"/>
+      <File Name="client/src/cmdhfmfdesfire_disabled.h"/>
+      <File Name="client/src/pm3_binlib.c"/>
+      <File Name="client/src/util.h"/>
+      <File Name="client/src/cmdhfepa.c"/>
+      <File Name="client/src/flash.c"/>
+      <File Name="client/src/comms.c"/>
+      <File Name="client/src/cmdlfhid.h"/>
+      <File Name="client/src/cmdhf14a.h"/>
+      <File Name="client/src/cmdwiegand.h"/>
+      <File Name="client/src/cmdanalyse.h"/>
+      <File Name="client/src/cmdhfst.c"/>
+      <File Name="client/src/cmdlfpyramid.c"/>
+      <File Name="client/src/cmdparser.c"/>
+      <File Name="client/src/flash.h"/>
+      <File Name="client/src/fileutils.c"/>
+      <File Name="client/src/cmdlfdestron.c"/>
+      <File Name="client/src/cmdlfverichip_disabled.c"/>
+      <File Name="client/src/cmdhftopaz.h"/>
+      <File Name="client/src/cmdparser.h"/>
+      <File Name="client/src/cmdcrc.h"/>
+      <File Name="client/src/cmdhf.c"/>
+      <File Name="client/src/cmdhf15.h"/>
+      <File Name="client/src/cmdlfnoralsy.c"/>
+      <File Name="client/src/emojis.h"/>
+      <File Name="client/src/preferences.h"/>
+      <File Name="client/src/cmdlfpresco.h"/>
+      <File Name="client/src/cmdhfmfdes.h"/>
+      <File Name="client/src/proxmark3.h"/>
+      <File Name="client/src/cmdlfnedap.c"/>
+      <File Name="client/src/cmdhf.h"/>
+      <File Name="client/src/cmdhf15.c"/>
+      <File Name="client/src/cmdanalyse.c"/>
+      <File Name="client/src/cmdlfgallagher.c"/>
+      <File Name="client/src/ui.c"/>
+      <File Name="client/src/cmdlfgallagher.h"/>
+      <File Name="client/src/cmdhfmfhard.h"/>
+      <File Name="client/src/cmdsmartcard.c"/>
+      <File Name="client/src/cmdhf14b.c"/>
+      <File Name="client/src/cmdlfpyramid.h"/>
+      <File Name="client/src/cmdhfwaveshare.h"/>
+      <File Name="client/src/cmdlfkeri.h"/>
+      <File Name="client/src/graph.h"/>
+      <File Name="client/src/cmdlfcotag.h"/>
+      <File Name="client/src/pm3_binlib.h"/>
+      <File Name="client/src/cmdhfmfu.c"/>
+      <File Name="client/src/wiegand_formats.c"/>
+      <File Name="client/src/cmdhw.c"/>
+      <File Name="client/src/cmdlfpac.c"/>
+      <File Name="client/src/cmdhfcryptorf.h"/>
+      <File Name="client/src/cmdlfnedap.h"/>
+      <File Name="client/src/cmdhfst.h"/>
+      <File Name="client/src/scandir.c"/>
+      <File Name="client/src/aidsearch.h"/>
+      <File Name="client/src/cmdlf.c"/>
+      <File Name="client/src/cmdlfsecurakey.h"/>
+      <File Name="client/src/cmdscript.c"/>
+      <File Name="client/src/cmdlfawid.h"/>
+      <File Name="client/src/cmdlfpac.h"/>
+      <File Name="client/src/cmdlfio.c"/>
+      <File Name="client/src/cmdhficlass.h"/>
+      <File Name="client/src/cmdmain.c"/>
+      <File Name="client/src/aiddesfire.h"/>
+      <File Name="client/src/proxguiqt.h"/>
+      <File Name="client/src/prng.h"/>
+      <File Name="client/src/cmdlfverichip_disabled.h"/>
+      <File Name="client/src/cmdlfhid.c"/>
+      <File Name="client/src/cmdhfmfp.h"/>
+      <File Name="client/src/cmdlfidteck.h"/>
+      <File Name="client/src/cmdflashmem.h"/>
+      <File Name="client/src/util.c"/>
+      <File Name="client/src/cmdlfem4x05.c"/>
+      <File Name="client/src/scandir.h"/>
+      <File Name="client/src/graph.c"/>
+      <File Name="client/src/cmdhfthinfilm.h"/>
+      <File Name="client/src/cmdmain.h"/>
+      <File Name="client/src/cmdlfvisa2000.h"/>
+      <File Name="client/src/jansson_path.c"/>
+      <File Name="client/src/cmdhfcryptorf.c"/>
+      <File Name="client/src/cmdlf.h"/>
+      <File Name="client/src/cmdlfio.h"/>
+      <File Name="client/src/cmdlft55xx.c"/>
+      <File Name="client/src/cmdlfguard.c"/>
+      <File Name="client/src/proxguiqt.cpp"/>
+      <File Name="client/src/cmdlfem4x50.h"/>
+      <File Name="client/src/cmdhftopaz.c"/>
+      <File Name="client/src/tea.c"/>
+      <File Name="client/src/comms.h"/>
+      <File Name="client/src/cmdhffido.h"/>
+      <File Name="client/src/cmdhflegic.c"/>
+      <File Name="client/src/cmdlfem4x.h"/>
+      <File Name="client/src/cmdlfidteck.c"/>
+      <File Name="client/src/cmdhficlass.c"/>
+      <File Name="client/src/scripting.c"/>
+      <File Name="client/src/cmdhflto.c"/>
+      <File Name="client/src/cmdlfindala.c"/>
+      <File Name="client/src/scripting.h"/>
+      <File Name="client/src/prng.c"/>
+      <File Name="client/src/preferences.c"/>
+      <File Name="client/src/cmdhfmf.c"/>
+      <File Name="client/src/cmdhw.h"/>
+      <File Name="client/src/cmdhffido.c"/>
+      <File Name="client/src/cmdflashmemspiffs.h"/>
+      <File Name="client/src/pm3_bitlib.c"/>
+      <File Name="client/src/cmdtrace.h"/>
+      <File Name="client/src/cmdsmartcard.h"/>
+      <File Name="client/src/cmdlfem4x50.c"/>
+      <File Name="client/src/cmdlfviking.h"/>
+      <File Name="client/src/cmdlfpcf7931.c"/>
+      <File Name="client/src/cmdhfmfdesfire_disabled.c"/>
+      <File Name="client/src/cmdlffdxb.c"/>
+      <File Name="client/src/guidummy.cpp"/>
+      <File Name="client/src/util_darwin.h"/>
+      <File Name="client/src/cmdhfepa.h"/>
+      <File Name="client/src/cmdlfviking.c"/>
+      <File Name="client/src/cmdcrc.c"/>
+      <File Name="client/src/cmdlfcotag.c"/>
+      <File Name="client/src/cmdlft55xx.h"/>
+      <File Name="client/src/cmdlfparadox.c"/>
+      <File Name="client/src/pm3_luawrap.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="deps">
+      <VirtualDirectory Name="hardnested">
+        <File Name="client/deps/hardnested/hardnested_bitarray_core.c"/>
+        <File Name="client/deps/hardnested/hardnested_tables.c"/>
+        <File Name="client/deps/hardnested/hardnested_bitarray_core.h"/>
+        <File Name="client/deps/hardnested/hardnested_bf_core.c"/>
+        <File Name="client/deps/hardnested/hardnested_bruteforce.h"/>
+        <File Name="client/deps/hardnested/hardnested_bf_core.h"/>
+        <File Name="client/deps/hardnested/hardnested_bruteforce.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="tinycbor">
+        <File Name="client/deps/tinycbor/cborjson.h"/>
+        <File Name="client/deps/tinycbor/cbor.h"/>
+        <File Name="client/deps/tinycbor/cborparser.c"/>
+        <File Name="client/deps/tinycbor/open_memstream.c"/>
+        <File Name="client/deps/tinycbor/utf8_p.h"/>
+        <File Name="client/deps/tinycbor/cborparser_dup_string.c"/>
+        <File Name="client/deps/tinycbor/cbortojson.c"/>
+        <File Name="client/deps/tinycbor/cborencoder.c"/>
+        <File Name="client/deps/tinycbor/cborpretty_stdio.c"/>
+        <File Name="client/deps/tinycbor/cborerrorstrings.c"/>
+        <File Name="client/deps/tinycbor/tinycbor-version.h"/>
+        <File Name="client/deps/tinycbor/cborinternal_p.h"/>
+        <File Name="client/deps/tinycbor/compilersupport_p.h"/>
+        <File Name="client/deps/tinycbor/cborencoder_close_container_checked.c"/>
+        <File Name="client/deps/tinycbor/cborpretty.c"/>
+        <File Name="client/deps/tinycbor/cborvalidation.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="jansson">
+        <File Name="client/deps/jansson/utf.h"/>
+        <File Name="client/deps/jansson/jansson.h"/>
+        <File Name="client/deps/jansson/load.c"/>
+        <File Name="client/deps/jansson/jansson_config.h"/>
+        <File Name="client/deps/jansson/pack_unpack.c"/>
+        <File Name="client/deps/jansson/hashtable.c"/>
+        <File Name="client/deps/jansson/strconv.c"/>
+        <File Name="client/deps/jansson/lookup3.h"/>
+        <File Name="client/deps/jansson/hashtable.h"/>
+        <File Name="client/deps/jansson/memory.c"/>
+        <File Name="client/deps/jansson/dump.c"/>
+        <File Name="client/deps/jansson/value.c"/>
+        <File Name="client/deps/jansson/utf.c"/>
+        <File Name="client/deps/jansson/jansson_private.h"/>
+        <File Name="client/deps/jansson/strbuffer.c"/>
+        <File Name="client/deps/jansson/strbuffer.h"/>
+        <File Name="client/deps/jansson/hashtable_seed.c"/>
+        <File Name="client/deps/jansson/error.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="liblua">
+        <File Name="client/deps/liblua/lundump.h"/>
+        <File Name="client/deps/liblua/lundump.c"/>
+        <File Name="client/deps/liblua/lparser.c"/>
+        <File Name="client/deps/liblua/lctype.c"/>
+        <File Name="client/deps/liblua/lfunc.c"/>
+        <File Name="client/deps/liblua/lobject.c"/>
+        <File Name="client/deps/liblua/lfunc.h"/>
+        <File Name="client/deps/liblua/ltable.h"/>
+        <File Name="client/deps/liblua/lcode.h"/>
+        <File Name="client/deps/liblua/lcode.c"/>
+        <File Name="client/deps/liblua/ldo.h"/>
+        <File Name="client/deps/liblua/lmem.h"/>
+        <File Name="client/deps/liblua/llex.c"/>
+        <File Name="client/deps/liblua/ldblib.c"/>
+        <File Name="client/deps/liblua/lcorolib.c"/>
+        <File Name="client/deps/liblua/lopcodes.h"/>
+        <File Name="client/deps/liblua/lstate.c"/>
+        <File Name="client/deps/liblua/llimits.h"/>
+        <File Name="client/deps/liblua/ldo.c"/>
+        <File Name="client/deps/liblua/lobject.h"/>
+        <File Name="client/deps/liblua/lmem.c"/>
+        <File Name="client/deps/liblua/loadlib.c"/>
+        <File Name="client/deps/liblua/lstate.h"/>
+        <File Name="client/deps/liblua/lstring.c"/>
+        <File Name="client/deps/liblua/lzio.h"/>
+        <File Name="client/deps/liblua/lstring.h"/>
+        <File Name="client/deps/liblua/liolib.c"/>
+        <File Name="client/deps/liblua/luaconf.h"/>
+        <File Name="client/deps/liblua/lualib.h"/>
+        <File Name="client/deps/liblua/lstrlib.c"/>
+        <File Name="client/deps/liblua/lbaselib.c"/>
+        <File Name="client/deps/liblua/lua.h"/>
+        <File Name="client/deps/liblua/ldump.c"/>
+        <File Name="client/deps/liblua/lzio.c"/>
+        <File Name="client/deps/liblua/lapi.c"/>
+        <File Name="client/deps/liblua/lbitlib.c"/>
+        <File Name="client/deps/liblua/lctype.h"/>
+        <File Name="client/deps/liblua/linit.c"/>
+        <File Name="client/deps/liblua/ltable.c"/>
+        <File Name="client/deps/liblua/lopcodes.c"/>
+        <File Name="client/deps/liblua/lua.c"/>
+        <File Name="client/deps/liblua/lua.hpp"/>
+        <File Name="client/deps/liblua/llex.h"/>
+        <File Name="client/deps/liblua/ltm.h"/>
+        <File Name="client/deps/liblua/lauxlib.c"/>
+        <File Name="client/deps/liblua/lgc.c"/>
+        <File Name="client/deps/liblua/lvm.c"/>
+        <File Name="client/deps/liblua/lmathlib.c"/>
+        <File Name="client/deps/liblua/luac.c"/>
+        <File Name="client/deps/liblua/lgc.h"/>
+        <File Name="client/deps/liblua/ltm.c"/>
+        <File Name="client/deps/liblua/lparser.h"/>
+        <File Name="client/deps/liblua/lvm.h"/>
+        <File Name="client/deps/liblua/lapi.h"/>
+        <File Name="client/deps/liblua/lauxlib.h"/>
+        <File Name="client/deps/liblua/ldebug.c"/>
+        <File Name="client/deps/liblua/ltablib.c"/>
+        <File Name="client/deps/liblua/ldebug.h"/>
+        <File Name="client/deps/liblua/loslib.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="reveng">
+        <File Name="client/deps/reveng/config.h"/>
+        <File Name="client/deps/reveng/reveng.c"/>
+        <File Name="client/deps/reveng/preset.c"/>
+        <File Name="client/deps/reveng/poly.c"/>
+        <File Name="client/deps/reveng/bmpbit.c"/>
+        <File Name="client/deps/reveng/cli.c"/>
+        <File Name="client/deps/reveng/reveng.h"/>
+        <File Name="client/deps/reveng/model.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="whereami">
+        <File Name="client/deps/whereami/whereami.h"/>
+        <File Name="client/deps/whereami/whereami.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="cliparser">
+        <File Name="client/deps/cliparser/argtable3.h"/>
+        <File Name="client/deps/cliparser/argtable3.c"/>
+        <File Name="client/deps/cliparser/cliparser.c"/>
+        <File Name="client/deps/cliparser/cliparser.h"/>
+        <File Name="client/deps/cliparser/getopt.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="amiitool">
+        <File Name="client/deps/amiitool/keygen.h"/>
+        <File Name="client/deps/amiitool/keygen.c"/>
+        <File Name="client/deps/amiitool/amiibo.h"/>
+        <File Name="client/deps/amiitool/amiibo.c"/>
+        <File Name="client/deps/amiitool/drbg.h"/>
+        <File Name="client/deps/amiitool/amiitool.c"/>
+        <File Name="client/deps/amiitool/drbg.c"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="android">
+      <File Name="client/android/pm3_main.c"/>
+      <File Name="client/android/jni_tools.c"/>
+      <File Name="client/android/jni_tools.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="include">
+      <File Name="client/include/pm3.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="armsrc">
+    <VirtualDirectory Name="Standalone">
+      <File Name="armsrc/Standalone/hf_legic.c"/>
+      <File Name="armsrc/Standalone/lf_em4100rswb.c"/>
+      <File Name="armsrc/Standalone/lf_samyrun.c"/>
+      <File Name="armsrc/Standalone/hf_msdsal.c"/>
+      <File Name="armsrc/Standalone/lf_em4100emul.c"/>
+      <File Name="armsrc/Standalone/hf_mattyrun.c"/>
+      <File Name="armsrc/Standalone/lf_hidbrute.c"/>
+      <File Name="armsrc/Standalone/lf_em4100rwc.c"/>
+      <File Name="armsrc/Standalone/hf_colin.c"/>
+      <File Name="armsrc/Standalone/hf_tcprst.c"/>
+      <File Name="armsrc/Standalone/lf_proxbrute.c"/>
+      <File Name="armsrc/Standalone/hf_young.c"/>
+      <File Name="armsrc/Standalone/hf_14asniff.c"/>
+      <File Name="armsrc/Standalone/hf_aveful.c"/>
+      <File Name="armsrc/Standalone/hf_bog.c"/>
+      <File Name="armsrc/Standalone/lf_hidbrute.h"/>
+      <File Name="armsrc/Standalone/standalone.h"/>
+      <File Name="armsrc/Standalone/lf_icehid.c"/>
+      <File Name="armsrc/Standalone/lf_skeleton.c"/>
+      <File Name="armsrc/Standalone/hf_colin.h"/>
+      <File Name="armsrc/Standalone/hf_iceclass.c"/>
+      <File Name="armsrc/Standalone/placeholder.c"/>
+    </VirtualDirectory>
+    <File Name="armsrc/legicrf.c"/>
+    <File Name="armsrc/appmain.h"/>
+    <File Name="armsrc/desfire_crypto.c"/>
+    <File Name="armsrc/mifaredesfire.h"/>
+    <File Name="armsrc/spiffs_nucleus.h"/>
+    <File Name="armsrc/printf.c"/>
+    <File Name="armsrc/mifaresniff_disabled.c"/>
+    <File Name="armsrc/printf.h"/>
+    <File Name="armsrc/BigBuf.h"/>
+    <File Name="armsrc/hfsnoop.h"/>
+    <File Name="armsrc/mifaresim.h"/>
+    <File Name="armsrc/vtsend.h"/>
+    <File Name="armsrc/mifareutil.c"/>
+    <File Name="armsrc/string.h"/>
+    <File Name="armsrc/appmain.c"/>
+    <File Name="armsrc/hfsnoop.c"/>
+    <File Name="armsrc/emvtags.h"/>
+    <File Name="armsrc/fonts_disabled.c"/>
+    <File Name="armsrc/spiffs_hydrogen.c"/>
+    <File Name="armsrc/optimized_cipherutils.h"/>
+    <File Name="armsrc/optimized_cipher.c"/>
+    <File Name="armsrc/fonts_disabled.h"/>
+    <File Name="armsrc/lfsampling.h"/>
+    <File Name="armsrc/ticks.c"/>
+    <File Name="armsrc/iso15693.c"/>
+    <File Name="armsrc/i2c.c"/>
+    <File Name="armsrc/version.c"/>
+    <File Name="armsrc/mifareutil.h"/>
+    <File Name="armsrc/hitag2crack.h"/>
+    <File Name="armsrc/BigBuf.c"/>
+    <File Name="armsrc/usart.h"/>
+    <File Name="armsrc/legicrf.h"/>
+    <File Name="armsrc/mifaredesfire.c"/>
+    <File Name="armsrc/buzzer_disabled.h"/>
+    <File Name="armsrc/optimized_elite.c"/>
+    <File Name="armsrc/legicrfsim.c"/>
+    <File Name="armsrc/LCD_disabled.h"/>
+    <File Name="armsrc/desfire_crypto.h"/>
+    <File Name="armsrc/usart.c"/>
+    <File Name="armsrc/epa.c"/>
+    <File Name="armsrc/radixsort.h"/>
+    <File Name="armsrc/util.h"/>
+    <File Name="armsrc/string.c"/>
+    <File Name="armsrc/wiegand.c"/>
+    <File Name="armsrc/pcf7931.h"/>
+    <File Name="armsrc/buzzer_disabled.c"/>
+    <File Name="armsrc/iclass.h"/>
+    <File Name="armsrc/hitag2_crypto.h"/>
+    <File Name="armsrc/em4x50.h"/>
+    <File Name="armsrc/cmd.h"/>
+    <File Name="armsrc/optimized_cipher.h"/>
+    <File Name="armsrc/spiffs_config.h"/>
+    <File Name="armsrc/start.c"/>
+    <File Name="armsrc/lfops.c"/>
+    <File Name="armsrc/flashmem.h"/>
+    <File Name="armsrc/legicrfsim.h"/>
+    <File Name="armsrc/flashmem.c"/>
+    <File Name="armsrc/hitag2.h"/>
+    <File Name="armsrc/thinfilm.h"/>
+    <File Name="armsrc/mifarecmd.h"/>
+    <File Name="armsrc/iso14443b.c"/>
+    <File Name="armsrc/epa.h"/>
+    <File Name="armsrc/mifaresim.c"/>
+    <File Name="armsrc/cmd.c"/>
+    <File Name="armsrc/em4x50.c"/>
+    <File Name="armsrc/felica.h"/>
+    <File Name="armsrc/optimized_elite.h"/>
+    <File Name="armsrc/spiffs_cache.c"/>
+    <File Name="armsrc/lfsampling.c"/>
+    <File Name="armsrc/LCD_disabled.c"/>
+    <File Name="armsrc/spiffs.h"/>
+    <File Name="armsrc/hitagS.h"/>
+    <File Name="armsrc/dbprint.c"/>
+    <File Name="armsrc/fpga_version_info.c"/>
+    <File Name="armsrc/desfire.h"/>
+    <File Name="armsrc/nprintf.h"/>
+    <File Name="armsrc/nprintf.c"/>
+    <File Name="armsrc/fpgaloader.c"/>
+    <File Name="armsrc/fpgaloader.h"/>
+    <File Name="armsrc/lfadc.h"/>
+    <File Name="armsrc/util.c"/>
+    <File Name="armsrc/iclass.c"/>
+    <File Name="armsrc/hitag2crack.c"/>
+    <File Name="armsrc/optimized_ikeys.c"/>
+    <File Name="armsrc/iso14443a.c"/>
+    <File Name="armsrc/spiffs.c"/>
+    <File Name="armsrc/hitag2_crypto.c"/>
+    <File Name="armsrc/iso14443b.h"/>
+    <File Name="armsrc/lfops.h"/>
+    <File Name="armsrc/frozen.c"/>
+    <File Name="armsrc/radixsort.c"/>
+    <File Name="armsrc/iso15693.h"/>
+    <File Name="armsrc/spiffs_gc.c"/>
+    <File Name="armsrc/thinfilm.c"/>
+    <File Name="armsrc/iso14443a.h"/>
+    <File Name="armsrc/pcf7931.c"/>
+    <File Name="armsrc/optimized_ikeys.h"/>
+    <File Name="armsrc/mifaresniff_disabled.h"/>
+    <File Name="armsrc/i2c.h"/>
+    <File Name="armsrc/felica.c"/>
+    <File Name="armsrc/vtsend.c"/>
+    <File Name="armsrc/spiffs_nucleus.c"/>
+    <File Name="armsrc/hitag2.c"/>
+    <File Name="armsrc/optimized_cipherutils.c"/>
+    <File Name="armsrc/mifarecmd.c"/>
+    <File Name="armsrc/hitagS.c"/>
+    <File Name="armsrc/frozen.h"/>
+    <File Name="armsrc/spiffs_check.c"/>
+    <File Name="armsrc/dbprint.h"/>
+    <File Name="armsrc/lfadc.c"/>
+    <File Name="armsrc/ticks.h"/>
+    <File Name="armsrc/wiegand.h"/>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="include">
+    <File Name="include/iso18.h"/>
+    <File Name="include/at91sam7s512.h"/>
+    <File Name="include/hitag.h"/>
+    <File Name="include/pmflash.h"/>
+    <File Name="include/usart_defs.h"/>
+    <File Name="include/protocols.h"/>
+    <File Name="include/iso15.h"/>
+    <File Name="include/mifare.h"/>
+    <File Name="include/em4x50.h"/>
+    <File Name="include/config_gpio.h"/>
+    <File Name="include/iso14b.h"/>
+    <File Name="include/pm3_cmd.h"/>
+    <File Name="include/legic.h"/>
+    <File Name="include/common.h"/>
+    <File Name="include/proxmark3_arm.h"/>
+    <File Name="include/ansi.h"/>
+  </VirtualDirectory>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="Cross GCC ( arm-none-eabi )" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>/home/lutz/githubs/proxmark3_buttje</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="Cross GCC ( arm-none-eabi )" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

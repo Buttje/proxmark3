@@ -529,10 +529,13 @@ int handle_tearoff(tearoff_params_t *params, bool verbose) {
         PrintAndLogEx(WARNING, "Tear-off command timeout.");
         return PM3_ETIMEOUT;
     }
-
+    
     if (resp.status == PM3_SUCCESS) {
         if (params->delay_us > 0 && verbose)
             PrintAndLogEx(INFO, "Tear-off hook configured with delay of " _GREEN_("%i us"), params->delay_us);
+
+        if (params->pulse_us > 0 && verbose)
+            PrintAndLogEx(INFO, "Pulse width configured with " _GREEN_("%i us"), params->pulse_us);
 
         if (params->on && verbose)
             PrintAndLogEx(INFO, "Tear-off hook " _GREEN_("enabled"));
@@ -540,7 +543,7 @@ int handle_tearoff(tearoff_params_t *params, bool verbose) {
         if (params->off && verbose)
             PrintAndLogEx(INFO, "Tear-off hook " _RED_("disabled"));
     } else if (verbose)
-        PrintAndLogEx(WARNING, "Tear-off command failed.");
+        PrintAndLogEx(WARNING, "Tear-off command failed. " _RED_("%i"), resp.status);
     return resp.status;
 }
 
@@ -548,15 +551,18 @@ static int CmdTearoff(const char *Cmd) {
     CLIParserContext *ctx;
     CLIParserInit(&ctx, "hw tearoff",
                   "Configure a tear-off hook for the next write command supporting tear-off\n"
+                  "Optionally define a pulse-width, if the field shall be turned-on after a defined time\n"
                   "After having been triggered by a write command, the tear-off hook is deactivated\n"
                   "Delay (in us) must be between 1 and 43000 (43ms). Precision is about 1/3us.",
                   "hw tearoff --delay 1200 --> define delay of 1200us\n"
+                  "hw tearoff --delay 1200 --pulse 10 --> define a 10us off-pulse after a delay of 1200us\n"
                   "hw tearoff --on --> (re)activate a previously defined delay\n"
                   "hw tearoff --off --> deactivate a previously activated but not yet triggered hook\n");
 
     void *argtable[] = {
         arg_param_begin,
         arg_int0(NULL, "delay", "<dec>", "Delay in us before triggering tear-off, must be between 1 and 43000"),
+        arg_int0(NULL, "pulse", "<width>", "Time to re-turn on field after field-off by <delay>, must be between 0 and 256"),
         arg_lit0(NULL, "on", "Activate tear-off hook"),
         arg_lit0(NULL, "off", "Deactivate tear-off hook"),
         arg_lit0("s", "silent", "less verbose output"),
@@ -566,9 +572,10 @@ static int CmdTearoff(const char *Cmd) {
     CLIExecWithReturn(ctx, Cmd, argtable, false);
     tearoff_params_t params;
     int delay = arg_get_int_def(ctx, 1, -1);
-    params.on = arg_get_lit(ctx, 2);
-    params.off = arg_get_lit(ctx, 3);
-    bool silent = arg_get_lit(ctx, 4);
+    int pulse = arg_get_int_def(ctx, 2, -1);
+    params.on = arg_get_lit(ctx, 3);
+    params.off = arg_get_lit(ctx, 4);
+    bool silent = arg_get_lit(ctx, 5);
     CLIParserFree(ctx);
 
     if (delay != -1) {
@@ -581,6 +588,18 @@ static int CmdTearoff(const char *Cmd) {
     }
 
     params.delay_us = delay;
+    
+    if (pulse != -1) {
+        if ((pulse < 1) || (pulse > 255)) {
+            PrintAndLogEx(WARNING, "You can't set pulse width out of 1..255 range!");
+            return PM3_EINVARG;
+        }
+    } else {
+        pulse = 0; // will be ignored by ARM
+    }
+
+    params.pulse_us = pulse;
+    
     if (params.on && params.off) {
         PrintAndLogEx(WARNING, "You can't set both --on and --off!");
         return PM3_EINVARG;

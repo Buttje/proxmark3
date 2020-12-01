@@ -457,7 +457,11 @@ void FpgaSendCommand(uint16_t cmd, uint16_t v) {
 // vs. clone vs. etc.). This is now a special case of FpgaSendCommand() to
 // avoid changing this function's occurence everywhere in the source code.
 //-----------------------------------------------------------------------------
+uint16_t prevModeOff = 0;
+
 void FpgaWriteConfWord(uint16_t v) {
+    if ((v&FPGA_MAJOR_MODE_MASK) != FPGA_MAJOR_MODE_OFF) 
+        prevModeOff=v;
     FpgaSendCommand(FPGA_CMD_SET_CONFREG, v);
 }
 

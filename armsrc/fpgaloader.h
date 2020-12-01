@@ -71,6 +71,7 @@ thres|                          x x x x x x x x
 #define FPGA_MAJOR_MODE_HF_GET_TRACE                (5<<6) // D
 
 // BOTH HF / LF
+extern uint16_t prevModeOff;
 #define FPGA_MAJOR_MODE_OFF                         (7<<6) // D
 
 

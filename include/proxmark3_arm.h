@@ -86,10 +86,13 @@
 #define LED_C_ON()        HIGH(GPIO_LED_C)
 #define LED_C_OFF()       LOW(GPIO_LED_C)
 #define LED_C_INV()       INVBIT(GPIO_LED_C)
-#define LED_D_ON()        HIGH(GPIO_LED_D)
-#define LED_D_OFF()       LOW(GPIO_LED_D)
-#define LED_D_INV()       INVBIT(GPIO_LED_D)
+#define LED_D_ON()        LED_A_ON()
+#define LED_D_OFF()       LED_A_OFF()
+#define LED_D_INV()       LED_A_INV()
 
+#define TRIG_ON()        HIGH(GPIO_LED_D)
+#define TRIG_OFF()       LOW(GPIO_LED_D)
+#define TRIG_INV()       INVBIT(GPIO_LED_D)
 
 // SPI
 #define SCK_LOW           LOW(GPIO_SPCK)
